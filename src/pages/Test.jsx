@@ -5,7 +5,7 @@ import {
 } from "react-router-dom";
 import axios from "axios";
 
-const API_URL = "http://localhost:3001";
+import API_URL from "../api";
 
 function Test() {
   const navigate = useNavigate();

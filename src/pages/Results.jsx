@@ -1,3 +1,4 @@
+import API_URL from "../api";
 import { useEffect, useState } from "react";
 import {
   Link,
@@ -30,7 +31,7 @@ function Results() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3001/results")
+      .get("${API_URL}/results")
       .then((response) => {
         setResults(response.data);
       })
@@ -53,7 +54,7 @@ function Results() {
 
     axios
       .delete(
-        `http://localhost:3001/results/${id}`
+        `${API_URL}/results/${id}`
       )
       .then(() => {
         setResults(

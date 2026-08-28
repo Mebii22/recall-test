@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import API_URL from "../api";
 
 const emptyQuestion = {
   question: "",
@@ -43,10 +44,10 @@ function Manage() {
   function loadData() {
     Promise.all([
       axios.get(
-        "http://localhost:3001/topics"
+        `${API_URL}/topics`
       ),
       axios.get(
-        "http://localhost:3001/questions"
+        `${API_URL}/questions`
       ),
     ])
       .then(([topicsResponse, questionsResponse]) => {
@@ -89,7 +90,7 @@ function Manage() {
     if (editingTopicId) {
       axios
         .put(
-          `http://localhost:3001/topics/${editingTopicId}`,
+          `${API_URL}/topics/${editingTopicId}`,
           topicData
         )
         .then(() => {
@@ -99,7 +100,7 @@ function Manage() {
     } else {
       axios
         .post(
-          "http://localhost:3001/topics",
+          `${API_URL}/topics`,
           topicData
         )
         .then(() => {
@@ -139,12 +140,12 @@ function Manage() {
 
     Promise.all([
       axios.delete(
-        `http://localhost:3001/topics/${id}`
+        `${API_URL}/topics/${id}`
       ),
       ...topicQuestions.map(
         (question) =>
           axios.delete(
-            `http://localhost:3001/questions/${question.id}`
+            `${API_URL}/questions/${question.id}`
           )
       ),
     ]).then(() => {
@@ -208,7 +209,7 @@ function Manage() {
     if (editingQuestionId) {
       axios
         .put(
-          `http://localhost:3001/questions/${editingQuestionId}`,
+          `${API_URL}/questions/${editingQuestionId}`,
           questionData
         )
         .then(() => {
@@ -218,7 +219,7 @@ function Manage() {
     } else {
       axios
         .post(
-          "http://localhost:3001/questions",
+          `${API_URL}/questions`,
           questionData
         )
         .then(() => {
@@ -253,7 +254,7 @@ function Manage() {
     }
 
     axios.patch(
-      `http://localhost:3001/topics/${topicId}`,
+      `${API_URL}/topics/${topicId}`,
       {
         questions: count,
       }
@@ -303,7 +304,7 @@ function Manage() {
 
     axios
       .delete(
-        `http://localhost:3001/questions/${question.id}`
+        `${API_URL}/questions/${question.id}`
       )
       .then(() => {
         loadData();

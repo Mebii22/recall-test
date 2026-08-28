@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
-const API_URL = "http://localhost:3001";
+import API_URL from "../api";
 
 function Revision() {
   const [revisionQuestions, setRevisionQuestions] =

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-const API_URL = "http://localhost:3001";
+import API_URL from "../api";
 
 function History() {
   const [results, setResults] = useState([]);

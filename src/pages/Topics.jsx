@@ -3,7 +3,7 @@ import axios from "axios";
 import TopicCard from "../components/TopicCard";
 import { Link } from "react-router-dom";
 
-const API_URL = "http://localhost:3001";
+import API_URL from "../api";
 
 function Topics() {
   const [topics, setTopics] = useState([]);
