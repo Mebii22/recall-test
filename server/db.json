@@ -1,0 +1,971 @@
+{
+  "topics": [
+    {
+      "id": "1",
+      "title": "JAVASCRIPT",
+      "description": "JavaScript fundamentals, variables, functions and arrays.",
+      "questions": 0
+    },
+    {
+      "id": "2",
+      "title": "REACT",
+      "description": "React components, props, state and events.",
+      "questions": 0
+    },
+    {
+      "id": "3",
+      "title": "HTML",
+      "description": "Semantic HTML, forms and basic accessibility.",
+      "questions": 0
+    },
+    {
+      "id": "4",
+      "title": "CSS",
+      "description": "CSS selectors, flexbox, grid and responsive design.",
+      "questions": 0
+    }
+  ],
+  "questions": [
+    {
+      "id": "1",
+      "topicId": "1",
+      "question": "What is JavaScript?",
+      "options": [
+        "A programming language",
+        "A database",
+        "An operating system",
+        "A browser"
+      ],
+      "answer": "A programming language",
+      "explanation": "JavaScript is a programming language commonly used to make websites interactive.",
+      "mastered": false,
+      "weak": false
+    },
+    {
+      "id": "2",
+      "topicId": "1",
+      "question": "Which keyword creates a variable that can be reassigned?",
+      "options": [
+        "const",
+        "let",
+        "fixed",
+        "define"
+      ],
+      "answer": "let",
+      "explanation": "The let keyword creates a variable whose value can be changed later.",
+      "weak": false,
+      "mastered": false
+    },
+    {
+      "id": "3",
+      "topicId": "1",
+      "question": "Which method adds an item to the end of an array?",
+      "options": [
+        "push()",
+        "pop()",
+        "shift()",
+        "slice()"
+      ],
+      "answer": "push()",
+      "explanation": "push() adds one or more items to the end of an array.",
+      "weak": false,
+      "mastered": false
+    },
+    {
+      "id": "4",
+      "topicId": "1",
+      "question": "Which keyword declares a constant?",
+      "options": [
+        "let",
+        "var",
+        "const",
+        "static"
+      ],
+      "answer": "const",
+      "explanation": "const creates a variable binding that cannot be reassigned.",
+      "weak": false,
+      "mastered": false
+    },
+    {
+      "id": "5",
+      "topicId": "1",
+      "question": "Which symbol is used for strict equality?",
+      "options": [
+        "=",
+        "==",
+        "===",
+        "!="
+      ],
+      "answer": "===",
+      "explanation": "The === operator checks both value and data type.",
+      "weak": true,
+      "mastered": false
+    },
+    {
+      "id": "6",
+      "topicId": "2",
+      "question": "What is React?",
+      "options": [
+        "A JavaScript library",
+        "A database",
+        "A programming language",
+        "An operating system"
+      ],
+      "answer": "A JavaScript library",
+      "explanation": "React is a JavaScript library for building user interfaces.",
+      "weak": true,
+      "mastered": false
+    },
+    {
+      "id": "7",
+      "topicId": "2",
+      "question": "Which hook is commonly used to manage state?",
+      "options": [
+        "useState",
+        "useStyle",
+        "usePage",
+        "useHTML"
+      ],
+      "answer": "useState",
+      "explanation": "useState allows a React component to store and update state.",
+      "mastered": false,
+      "weak": false
+    },
+    {
+      "id": "8",
+      "topicId": "2",
+      "question": "What is a React component?",
+      "options": [
+        "A reusable UI building block",
+        "A database table",
+        "A CSS file",
+        "A server"
+      ],
+      "answer": "A reusable UI building block",
+      "explanation": "Components are reusable pieces of a React user interface.",
+      "weak": true,
+      "mastered": false
+    },
+    {
+      "id": "9",
+      "topicId": "2",
+      "question": "What is used to pass data from a parent to a child component?",
+      "options": [
+        "Props",
+        "Loops",
+        "CSS",
+        "JSON Server"
+      ],
+      "answer": "Props",
+      "explanation": "Props allow a parent component to pass data to a child component.",
+      "mastered": false,
+      "weak": false
+    },
+    {
+      "id": "10",
+      "topicId": "2",
+      "question": "Which hook is commonly used for side effects?",
+      "options": [
+        "useEffect",
+        "useClick",
+        "useData",
+        "useComponent"
+      ],
+      "answer": "useEffect",
+      "explanation": "useEffect is used to perform side effects such as API requests.",
+      "weak": false,
+      "mastered": false
+    },
+    {
+      "id": "11",
+      "topicId": "3",
+      "question": "Which HTML element creates a hyperlink?",
+      "options": [
+        "<link>",
+        "<a>",
+        "<href>",
+        "<url>"
+      ],
+      "answer": "<a>",
+      "explanation": "The anchor element <a> creates hyperlinks."
+    },
+    {
+      "id": "12",
+      "topicId": "3",
+      "question": "Which element is used for the main heading?",
+      "options": [
+        "<h1>",
+        "<head>",
+        "<title>",
+        "<header>"
+      ],
+      "answer": "<h1>",
+      "explanation": "The h1 element represents the most important heading on a page."
+    },
+    {
+      "id": "13",
+      "topicId": "3",
+      "question": "Which HTML element creates a form?",
+      "options": [
+        "<form>",
+        "<input>",
+        "<fieldset>",
+        "<button>"
+      ],
+      "answer": "<form>",
+      "explanation": "The form element groups controls used to collect user input."
+    },
+    {
+      "id": "14",
+      "topicId": "3",
+      "question": "Which element creates a numbered list?",
+      "options": [
+        "<ul>",
+        "<ol>",
+        "<li>",
+        "<list>"
+      ],
+      "answer": "<ol>",
+      "explanation": "The ol element creates an ordered, numbered list."
+    },
+    {
+      "id": "15",
+      "topicId": "3",
+      "question": "Which attribute provides alternative text for an image?",
+      "options": [
+        "src",
+        "alt",
+        "href",
+        "title"
+      ],
+      "answer": "alt",
+      "explanation": "The alt attribute provides alternative text for images."
+    },
+    {
+      "id": "16",
+      "topicId": "4",
+      "question": "Which CSS property creates a flex container?",
+      "options": [
+        "display: flex",
+        "position: flex",
+        "flex: display",
+        "layout: flex"
+      ],
+      "answer": "display: flex",
+      "explanation": "display: flex turns an element into a flex container."
+    },
+    {
+      "id": "17",
+      "topicId": "4",
+      "question": "Which CSS property changes text color?",
+      "options": [
+        "font-color",
+        "color",
+        "text-color",
+        "foreground"
+      ],
+      "answer": "color",
+      "explanation": "The color property controls the color of text."
+    },
+    {
+      "id": "18",
+      "topicId": "4",
+      "question": "Which CSS property changes the background color?",
+      "options": [
+        "background-color",
+        "color-background",
+        "bg-color",
+        "background"
+      ],
+      "answer": "background-color",
+      "explanation": "background-color sets the background color of an element.",
+      "mastered": true,
+      "weak": false
+    },
+    {
+      "id": "19",
+      "topicId": "4",
+      "question": "Which layout system is useful for two-dimensional layouts?",
+      "options": [
+        "Grid",
+        "Float",
+        "Inline",
+        "Position"
+      ],
+      "answer": "Grid",
+      "explanation": "CSS Grid is designed for two-dimensional row and column layouts."
+    },
+    {
+      "id": "20",
+      "topicId": "4",
+      "question": "Which unit is relative to the root font size?",
+      "options": [
+        "px",
+        "em",
+        "rem",
+        "vh"
+      ],
+      "answer": "rem",
+      "explanation": "The rem unit is relative to the root HTML element's font size."
+    }
+  ],
+  "results": [
+    {
+      "topicId": "1",
+      "topicTitle": "JAVASCRIPT",
+      "score": 100,
+      "correctCount": 5,
+      "totalQuestions": 5,
+      "date": "8/28/2026",
+      "timestamp": "2026-08-28T10:35:05.917Z",
+      "answers": [
+        {
+          "questionId": "5",
+          "question": "Which symbol is used for strict equality?",
+          "options": [
+            "=",
+            "==",
+            "===",
+            "!="
+          ],
+          "selectedAnswer": "===",
+          "correctAnswer": "===",
+          "explanation": "The === operator checks both value and data type.",
+          "isCorrect": true
+        },
+        {
+          "questionId": "4",
+          "question": "Which keyword declares a constant?",
+          "options": [
+            "let",
+            "var",
+            "const",
+            "static"
+          ],
+          "selectedAnswer": "const",
+          "correctAnswer": "const",
+          "explanation": "const creates a variable binding that cannot be reassigned.",
+          "isCorrect": true
+        },
+        {
+          "questionId": "1",
+          "question": "What is JavaScript?",
+          "options": [
+            "A programming language",
+            "A database",
+            "An operating system",
+            "A browser"
+          ],
+          "selectedAnswer": "A programming language",
+          "correctAnswer": "A programming language",
+          "explanation": "JavaScript is a programming language commonly used to make websites interactive.",
+          "isCorrect": true
+        },
+        {
+          "questionId": "2",
+          "question": "Which keyword creates a variable that can be reassigned?",
+          "options": [
+            "const",
+            "let",
+            "fixed",
+            "define"
+          ],
+          "selectedAnswer": "let",
+          "correctAnswer": "let",
+          "explanation": "The let keyword creates a variable whose value can be changed later.",
+          "isCorrect": true
+        },
+        {
+          "questionId": "3",
+          "question": "Which method adds an item to the end of an array?",
+          "options": [
+            "push()",
+            "pop()",
+            "shift()",
+            "slice()"
+          ],
+          "selectedAnswer": "push()",
+          "correctAnswer": "push()",
+          "explanation": "push() adds one or more items to the end of an array.",
+          "isCorrect": true
+        }
+      ],
+      "id": "nDsAo3CWVgA"
+    },
+    {
+      "topicId": "2",
+      "topicTitle": "REACT",
+      "score": 60,
+      "correctCount": 3,
+      "totalQuestions": 5,
+      "date": "8/28/2026",
+      "timestamp": "2026-08-28T10:35:47.802Z",
+      "answers": [
+        {
+          "questionId": "8",
+          "question": "What is a React component?",
+          "options": [
+            "A reusable UI building block",
+            "A database table",
+            "A CSS file",
+            "A server"
+          ],
+          "selectedAnswer": "A reusable UI building block",
+          "correctAnswer": "A reusable UI building block",
+          "explanation": "Components are reusable pieces of a React user interface.",
+          "isCorrect": true
+        },
+        {
+          "questionId": "9",
+          "question": "What is used to pass data from a parent to a child component?",
+          "options": [
+            "Props",
+            "Loops",
+            "CSS",
+            "JSON Server"
+          ],
+          "selectedAnswer": "CSS",
+          "correctAnswer": "Props",
+          "explanation": "Props allow a parent component to pass data to a child component.",
+          "isCorrect": false
+        },
+        {
+          "questionId": "7",
+          "question": "Which hook is commonly used to manage state?",
+          "options": [
+            "useState",
+            "useStyle",
+            "usePage",
+            "useHTML"
+          ],
+          "selectedAnswer": "useStyle",
+          "correctAnswer": "useState",
+          "explanation": "useState allows a React component to store and update state.",
+          "isCorrect": false
+        },
+        {
+          "questionId": "10",
+          "question": "Which hook is commonly used for side effects?",
+          "options": [
+            "useEffect",
+            "useClick",
+            "useData",
+            "useComponent"
+          ],
+          "selectedAnswer": "useEffect",
+          "correctAnswer": "useEffect",
+          "explanation": "useEffect is used to perform side effects such as API requests.",
+          "isCorrect": true
+        },
+        {
+          "questionId": "6",
+          "question": "What is React?",
+          "options": [
+            "A JavaScript library",
+            "A database",
+            "A programming language",
+            "An operating system"
+          ],
+          "selectedAnswer": "A JavaScript library",
+          "correctAnswer": "A JavaScript library",
+          "explanation": "React is a JavaScript library for building user interfaces.",
+          "isCorrect": true
+        }
+      ],
+      "id": "Wrxk_QzwXV0"
+    },
+    {
+      "topicId": "1",
+      "topicTitle": "JAVASCRIPT",
+      "score": 80,
+      "correctCount": 4,
+      "totalQuestions": 5,
+      "date": "8/28/2026",
+      "timestamp": "2026-08-28T10:46:24.325Z",
+      "answers": [
+        {
+          "questionId": "2",
+          "question": "Which keyword creates a variable that can be reassigned?",
+          "options": [
+            "const",
+            "let",
+            "fixed",
+            "define"
+          ],
+          "selectedAnswer": "let",
+          "correctAnswer": "let",
+          "explanation": "The let keyword creates a variable whose value can be changed later.",
+          "isCorrect": true
+        },
+        {
+          "questionId": "1",
+          "question": "What is JavaScript?",
+          "options": [
+            "A programming language",
+            "A database",
+            "An operating system",
+            "A browser"
+          ],
+          "selectedAnswer": "An operating system",
+          "correctAnswer": "A programming language",
+          "explanation": "JavaScript is a programming language commonly used to make websites interactive.",
+          "isCorrect": false
+        },
+        {
+          "questionId": "3",
+          "question": "Which method adds an item to the end of an array?",
+          "options": [
+            "push()",
+            "pop()",
+            "shift()",
+            "slice()"
+          ],
+          "selectedAnswer": "push()",
+          "correctAnswer": "push()",
+          "explanation": "push() adds one or more items to the end of an array.",
+          "isCorrect": true
+        },
+        {
+          "questionId": "ewm5vRJUkBw",
+          "question": "dgfxchg",
+          "options": [
+            "gfcvhg",
+            "gfhcgv",
+            "gfhcgvj",
+            "ytgvjhb"
+          ],
+          "selectedAnswer": "gfhcgvj",
+          "correctAnswer": "gfhcgvj",
+          "explanation": "gchvjbkn",
+          "isCorrect": true
+        },
+        {
+          "questionId": "5",
+          "question": "Which symbol is used for strict equality?",
+          "options": [
+            "=",
+            "==",
+            "===",
+            "!="
+          ],
+          "selectedAnswer": "===",
+          "correctAnswer": "===",
+          "explanation": "The === operator checks both value and data type.",
+          "isCorrect": true
+        }
+      ],
+      "id": "nJ2-FJ0xqkw"
+    },
+    {
+      "topicId": "1",
+      "topicTitle": "JAVASCRIPT",
+      "score": 100,
+      "correctCount": 5,
+      "totalQuestions": 5,
+      "date": "8/28/2026",
+      "timestamp": "2026-08-28T11:05:43.268Z",
+      "answers": [
+        {
+          "questionId": "3",
+          "question": "Which method adds an item to the end of an array?",
+          "options": [
+            "push()",
+            "pop()",
+            "shift()",
+            "slice()"
+          ],
+          "selectedAnswer": "push()",
+          "correctAnswer": "push()",
+          "explanation": "push() adds one or more items to the end of an array.",
+          "isCorrect": true
+        },
+        {
+          "questionId": "4",
+          "question": "Which keyword declares a constant?",
+          "options": [
+            "let",
+            "var",
+            "const",
+            "static"
+          ],
+          "selectedAnswer": "const",
+          "correctAnswer": "const",
+          "explanation": "const creates a variable binding that cannot be reassigned.",
+          "isCorrect": true
+        },
+        {
+          "questionId": "5",
+          "question": "Which symbol is used for strict equality?",
+          "options": [
+            "=",
+            "==",
+            "===",
+            "!="
+          ],
+          "selectedAnswer": "===",
+          "correctAnswer": "===",
+          "explanation": "The === operator checks both value and data type.",
+          "isCorrect": true
+        },
+        {
+          "questionId": "2",
+          "question": "Which keyword creates a variable that can be reassigned?",
+          "options": [
+            "const",
+            "let",
+            "fixed",
+            "define"
+          ],
+          "selectedAnswer": "let",
+          "correctAnswer": "let",
+          "explanation": "The let keyword creates a variable whose value can be changed later.",
+          "isCorrect": true
+        },
+        {
+          "questionId": "1",
+          "question": "What is JavaScript?",
+          "options": [
+            "A programming language",
+            "A database",
+            "An operating system",
+            "A browser"
+          ],
+          "selectedAnswer": "A programming language",
+          "correctAnswer": "A programming language",
+          "explanation": "JavaScript is a programming language commonly used to make websites interactive.",
+          "isCorrect": true
+        }
+      ],
+      "id": "Qg8_56OvIaY"
+    },
+    {
+      "topicId": "4",
+      "topicTitle": "CSS",
+      "score": 40,
+      "correctCount": 2,
+      "totalQuestions": 5,
+      "date": "8/28/2026",
+      "timestamp": "2026-08-28T14:15:58.789Z",
+      "answers": [
+        {
+          "questionId": "17",
+          "question": "Which CSS property changes text color?",
+          "options": [
+            "font-color",
+            "color",
+            "text-color",
+            "foreground"
+          ],
+          "selectedAnswer": "text-color",
+          "correctAnswer": "color",
+          "explanation": "The color property controls the color of text.",
+          "isCorrect": false
+        },
+        {
+          "questionId": "16",
+          "question": "Which CSS property creates a flex container?",
+          "options": [
+            "display: flex",
+            "position: flex",
+            "flex: display",
+            "layout: flex"
+          ],
+          "selectedAnswer": "display: flex",
+          "correctAnswer": "display: flex",
+          "explanation": "display: flex turns an element into a flex container.",
+          "isCorrect": true
+        },
+        {
+          "questionId": "18",
+          "question": "Which CSS property changes the background color?",
+          "options": [
+            "background-color",
+            "color-background",
+            "bg-color",
+            "background"
+          ],
+          "selectedAnswer": "bg-color",
+          "correctAnswer": "background-color",
+          "explanation": "background-color sets the background color of an element.",
+          "isCorrect": false
+        },
+        {
+          "questionId": "20",
+          "question": "Which unit is relative to the root font size?",
+          "options": [
+            "px",
+            "em",
+            "rem",
+            "vh"
+          ],
+          "selectedAnswer": "px",
+          "correctAnswer": "rem",
+          "explanation": "The rem unit is relative to the root HTML element's font size.",
+          "isCorrect": false
+        },
+        {
+          "questionId": "19",
+          "question": "Which layout system is useful for two-dimensional layouts?",
+          "options": [
+            "Grid",
+            "Float",
+            "Inline",
+            "Position"
+          ],
+          "selectedAnswer": "Grid",
+          "correctAnswer": "Grid",
+          "explanation": "CSS Grid is designed for two-dimensional row and column layouts.",
+          "isCorrect": true
+        }
+      ],
+      "id": "QwOXOyK_TQI"
+    },
+    {
+      "topicId": "1",
+      "topicTitle": "JAVASCRIPT",
+      "score": 80,
+      "correctCount": 4,
+      "totalQuestions": 5,
+      "date": "8/28/2026",
+      "timestamp": "2026-08-28T16:15:37.491Z",
+      "answers": [
+        {
+          "questionId": "4",
+          "question": "Which keyword declares a constant?",
+          "options": [
+            "let",
+            "var",
+            "const",
+            "static"
+          ],
+          "selectedAnswer": "const",
+          "correctAnswer": "const",
+          "explanation": "const creates a variable binding that cannot be reassigned.",
+          "isCorrect": true
+        },
+        {
+          "questionId": "5",
+          "question": "Which symbol is used for strict equality?",
+          "options": [
+            "=",
+            "==",
+            "===",
+            "!="
+          ],
+          "selectedAnswer": "==",
+          "correctAnswer": "===",
+          "explanation": "The === operator checks both value and data type.",
+          "isCorrect": false
+        },
+        {
+          "questionId": "2",
+          "question": "Which keyword creates a variable that can be reassigned?",
+          "options": [
+            "const",
+            "let",
+            "fixed",
+            "define"
+          ],
+          "selectedAnswer": "let",
+          "correctAnswer": "let",
+          "explanation": "The let keyword creates a variable whose value can be changed later.",
+          "isCorrect": true
+        },
+        {
+          "questionId": "3",
+          "question": "Which method adds an item to the end of an array?",
+          "options": [
+            "push()",
+            "pop()",
+            "shift()",
+            "slice()"
+          ],
+          "selectedAnswer": "push()",
+          "correctAnswer": "push()",
+          "explanation": "push() adds one or more items to the end of an array.",
+          "isCorrect": true
+        },
+        {
+          "questionId": "1",
+          "question": "What is JavaScript?",
+          "options": [
+            "A programming language",
+            "A database",
+            "An operating system",
+            "A browser"
+          ],
+          "selectedAnswer": "A programming language",
+          "correctAnswer": "A programming language",
+          "explanation": "JavaScript is a programming language commonly used to make websites interactive.",
+          "isCorrect": true
+        }
+      ],
+      "id": "oFQoLB1tPbA"
+    },
+    {
+      "topicId": "2",
+      "topicTitle": "REACT",
+      "score": 100,
+      "correctCount": 5,
+      "totalQuestions": 5,
+      "date": "8/28/2026",
+      "timestamp": "2026-08-28T16:17:21.407Z",
+      "answers": [
+        {
+          "questionId": "9",
+          "question": "What is used to pass data from a parent to a child component?",
+          "options": [
+            "Props",
+            "Loops",
+            "CSS",
+            "JSON Server"
+          ],
+          "selectedAnswer": "Props",
+          "correctAnswer": "Props",
+          "explanation": "Props allow a parent component to pass data to a child component.",
+          "isCorrect": true
+        },
+        {
+          "questionId": "8",
+          "question": "What is a React component?",
+          "options": [
+            "A reusable UI building block",
+            "A database table",
+            "A CSS file",
+            "A server"
+          ],
+          "selectedAnswer": "A reusable UI building block",
+          "correctAnswer": "A reusable UI building block",
+          "explanation": "Components are reusable pieces of a React user interface.",
+          "isCorrect": true
+        },
+        {
+          "questionId": "6",
+          "question": "What is React?",
+          "options": [
+            "A JavaScript library",
+            "A database",
+            "A programming language",
+            "An operating system"
+          ],
+          "selectedAnswer": "A JavaScript library",
+          "correctAnswer": "A JavaScript library",
+          "explanation": "React is a JavaScript library for building user interfaces.",
+          "isCorrect": true
+        },
+        {
+          "questionId": "7",
+          "question": "Which hook is commonly used to manage state?",
+          "options": [
+            "useState",
+            "useStyle",
+            "usePage",
+            "useHTML"
+          ],
+          "selectedAnswer": "useState",
+          "correctAnswer": "useState",
+          "explanation": "useState allows a React component to store and update state.",
+          "isCorrect": true
+        },
+        {
+          "questionId": "10",
+          "question": "Which hook is commonly used for side effects?",
+          "options": [
+            "useEffect",
+            "useClick",
+            "useData",
+            "useComponent"
+          ],
+          "selectedAnswer": "useEffect",
+          "correctAnswer": "useEffect",
+          "explanation": "useEffect is used to perform side effects such as API requests.",
+          "isCorrect": true
+        }
+      ],
+      "id": "eee4nI0TYIY"
+    },
+    {
+      "topicId": "2",
+      "topicTitle": "REACT",
+      "score": 60,
+      "correctCount": 3,
+      "totalQuestions": 5,
+      "date": "8/28/2026",
+      "timestamp": "2026-08-28T16:18:25.074Z",
+      "answers": [
+        {
+          "questionId": "9",
+          "question": "What is used to pass data from a parent to a child component?",
+          "options": [
+            "Props",
+            "Loops",
+            "CSS",
+            "JSON Server"
+          ],
+          "selectedAnswer": "Props",
+          "correctAnswer": "Props",
+          "explanation": "Props allow a parent component to pass data to a child component.",
+          "isCorrect": true
+        },
+        {
+          "questionId": "7",
+          "question": "Which hook is commonly used to manage state?",
+          "options": [
+            "useState",
+            "useStyle",
+            "usePage",
+            "useHTML"
+          ],
+          "selectedAnswer": "useState",
+          "correctAnswer": "useState",
+          "explanation": "useState allows a React component to store and update state.",
+          "isCorrect": true
+        },
+        {
+          "questionId": "6",
+          "question": "What is React?",
+          "options": [
+            "A JavaScript library",
+            "A database",
+            "A programming language",
+            "An operating system"
+          ],
+          "selectedAnswer": "A programming language",
+          "correctAnswer": "A JavaScript library",
+          "explanation": "React is a JavaScript library for building user interfaces.",
+          "isCorrect": false
+        },
+        {
+          "questionId": "10",
+          "question": "Which hook is commonly used for side effects?",
+          "options": [
+            "useEffect",
+            "useClick",
+            "useData",
+            "useComponent"
+          ],
+          "selectedAnswer": "useEffect",
+          "correctAnswer": "useEffect",
+          "explanation": "useEffect is used to perform side effects such as API requests.",
+          "isCorrect": true
+        },
+        {
+          "questionId": "8",
+          "question": "What is a React component?",
+          "options": [
+            "A reusable UI building block",
+            "A database table",
+            "A CSS file",
+            "A server"
+          ],
+          "selectedAnswer": "A server",
+          "correctAnswer": "A reusable UI building block",
+          "explanation": "Components are reusable pieces of a React user interface.",
+          "isCorrect": false
+        }
+      ],
+      "id": "eyO8gUlvmPM"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

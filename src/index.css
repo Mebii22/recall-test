@@ -1,0 +1,21 @@
+html {
+  background: #080808;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #080808;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+::selection {
+  background: #ff3b0a;
+  color: #080808;
+}

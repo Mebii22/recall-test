@@ -1,0 +1,2037 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Mono:wght@400;500;700&display=swap");
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+:root {
+  --black: #080808;
+  --dark: #151515;
+  --line: #292929;
+  --white: #f2f0e6;
+  --muted: #8a8a8a;
+  --orange: #ff3b0a;
+  --green: #22c55e;
+  --red: #ef4444;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--black);
+  color: var(--white);
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.navbar-custom {
+  width: 100%;
+  min-height: 82px;
+
+  background: rgba(8, 8, 8, 0.98);
+  border-bottom: 1px solid var(--line);
+
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+.navbar-container {
+  width: 100%;
+  max-width: 1400px;
+  min-height: 82px;
+
+  margin: 0 auto;
+  padding: 0 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: relative;
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.navbar-logo {
+  display: inline-block;
+
+  color: var(--white) !important;
+
+  font-family: "Archivo Black", sans-serif;
+  font-size: 28px;
+  font-weight: 900;
+
+  line-height: 1;
+  letter-spacing: -2px;
+
+  text-decoration: none !important;
+
+  white-space: nowrap;
+
+  transition: opacity 0.2s ease;
+}
+
+.navbar-logo span {
+  color: var(--orange);
+}
+
+.navbar-logo:hover {
+  color: var(--white) !important;
+  opacity: 0.85;
+}
+
+
+/* =========================================================
+   DESKTOP NAVIGATION
+========================================================= */
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 38px;
+}
+
+.navbar-links .nav-link {
+  position: relative;
+
+  display: inline-flex;
+  align-items: center;
+
+  padding: 8px 0 !important;
+  margin: 0 !important;
+
+  color: var(--muted) !important;
+
+  font-family: "DM Mono", monospace;
+  font-size: 11px;
+  font-weight: 500;
+
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+
+  line-height: 1;
+
+  text-decoration: none !important;
+
+  white-space: nowrap;
+
+  transition:
+    color 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.navbar-links .nav-link:hover {
+  color: var(--white) !important;
+}
+
+.navbar-links .nav-link.active {
+  color: var(--orange) !important;
+}
+
+.navbar-links .nav-link.active::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  height: 2px;
+
+  background: var(--orange);
+}
+
+
+/* =========================================================
+   MOBILE HAMBURGER
+========================================================= */
+
+.menu-toggle {
+  display: none;
+
+  width: 44px;
+  height: 44px;
+
+  padding: 0;
+  margin: 0;
+
+  background: transparent;
+
+  border: 1px solid var(--line);
+  border-radius: 0;
+
+  cursor: pointer;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+
+  gap: 5px;
+
+  appearance: none;
+  -webkit-appearance: none;
+
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.menu-toggle:hover {
+  border-color: var(--orange);
+}
+
+.menu-toggle:focus {
+  outline: none;
+  border-color: var(--orange);
+}
+
+.menu-toggle span {
+  display: block;
+
+  width: 21px;
+  height: 2px;
+
+  margin: 0;
+
+  background: var(--white);
+
+  transform-origin: center;
+
+  transition:
+    transform 0.25s ease,
+    opacity 0.2s ease,
+    width 0.2s ease;
+}
+
+
+/* =========================================================
+   HAMBURGER -> X
+========================================================= */
+
+.menu-toggle.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.menu-toggle.open span:nth-child(2) {
+  opacity: 0;
+  width: 0;
+}
+
+.menu-toggle.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+.page-section {
+  width: 100%;
+  min-height: calc(100vh - 82px);
+
+  padding: 90px 0 120px;
+}
+
+
+/* =========================================================
+   LABELS
+========================================================= */
+
+.orange-label,
+.small-label {
+  color: var(--orange);
+
+  font-family: "DM Mono", monospace;
+
+  font-size: 11px;
+  font-weight: 500;
+
+  letter-spacing: 1.5px;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   PAGE TITLES
+========================================================= */
+
+.page-title {
+  font-family: "Archivo Black", sans-serif;
+
+  font-size: clamp(60px, 10vw, 145px);
+
+  line-height: 0.83;
+
+  letter-spacing: -6px;
+
+  text-transform: uppercase;
+
+  margin: 20px 0 35px;
+
+  overflow-wrap: break-word;
+}
+
+.page-title span,
+.section-title span,
+.hero-title span {
+  color: var(--orange);
+}
+
+
+/* =========================================================
+   HOME / HERO
+========================================================= */
+
+.hero-section {
+  padding: 45px 0 100px;
+}
+
+.hero-title {
+  font-family: "Archivo Black", sans-serif;
+
+  font-size: clamp(75px, 12vw, 175px);
+
+  line-height: 0.8;
+
+  letter-spacing: -8px;
+
+  text-transform: uppercase;
+
+  margin: 20px 0 40px;
+
+  overflow-wrap: break-word;
+}
+
+.page-description {
+  color: var(--muted);
+
+  max-width: 700px;
+
+  line-height: 1.7;
+
+  font-size: 15px;
+}
+
+.hero-description {
+  max-width: 650px;
+
+  margin-bottom: 35px;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.main-button,
+.secondary-button,
+.small-action,
+.delete-button {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 0;
+
+  cursor: pointer;
+
+  font-family: "DM Mono", monospace;
+
+  font-size: 11px;
+
+  letter-spacing: 1.2px;
+
+  text-transform: uppercase;
+
+  text-decoration: none;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.main-button {
+  background: var(--orange);
+
+  color: var(--black);
+
+  border: 1px solid var(--orange);
+
+  padding: 14px 20px;
+
+  font-weight: 700;
+}
+
+.main-button:hover:not(:disabled) {
+  background: var(--white);
+
+  border-color: var(--white);
+
+  color: var(--black);
+}
+
+.main-button:disabled {
+  opacity: 0.35;
+
+  cursor: not-allowed;
+}
+
+.secondary-button {
+  background: transparent;
+
+  color: var(--white);
+
+  border: 1px solid var(--line);
+
+  padding: 14px 20px;
+}
+
+.secondary-button:hover {
+  border-color: var(--orange);
+
+  color: var(--orange);
+}
+
+.main-button:focus,
+.secondary-button:focus,
+.small-action:focus,
+.delete-button:focus {
+  outline: none;
+}
+
+
+/* =========================================================
+   HOME SIDE BOX
+========================================================= */
+
+.hero-side-box {
+  background: var(--dark);
+
+  border: 1px solid var(--line);
+
+  border-left: 3px solid var(--orange);
+
+  padding: 35px;
+}
+
+.hero-side-box h2 {
+  font-family: "Archivo Black", sans-serif;
+
+  font-size: 40px;
+
+  line-height: 0.9;
+
+  margin: 20px 0;
+}
+
+.hero-side-box p {
+  color: var(--muted);
+
+  font-size: 13px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   SECTION TITLES
+========================================================= */
+
+.section-title {
+  font-family: "Archivo Black", sans-serif;
+
+  font-size: clamp(48px, 7vw, 90px);
+
+  line-height: 0.88;
+
+  letter-spacing: -4px;
+
+  text-transform: uppercase;
+
+  overflow-wrap: break-word;
+
+  margin-top: 10px;
+}
+
+.small-title {
+  font-size: clamp(40px, 6vw, 70px);
+}
+
+
+/* =========================================================
+   INFO BOX
+========================================================= */
+
+.info-box {
+  background: var(--dark);
+
+  border: 1px solid var(--line);
+
+  padding: 35px;
+}
+
+.info-box h2,
+.info-box h3,
+.info-box h4 {
+  font-family: "Archivo Black", sans-serif;
+
+  text-transform: uppercase;
+}
+
+.info-box p {
+  color: var(--muted);
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   HOW IT WORKS
+========================================================= */
+
+.step-number {
+  display: block;
+
+  color: var(--orange);
+
+  font-family: "DM Mono", monospace;
+
+  font-size: 13px;
+
+  margin-bottom: 25px;
+}
+
+
+/* =========================================================
+   TOPIC CARD
+========================================================= */
+
+.topic-card {
+  background: var(--dark);
+
+  border: 1px solid var(--line);
+
+  padding: 35px;
+
+  height: 100%;
+
+  transition:
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.topic-card:hover {
+  border-color: var(--orange);
+
+  transform: translateY(-3px);
+}
+
+.topic-card-title {
+  font-family: "Archivo Black", sans-serif;
+
+  font-size: 48px;
+
+  margin: 25px 0 12px;
+
+  text-transform: uppercase;
+
+  overflow-wrap: break-word;
+}
+
+.topic-card-description {
+  color: var(--muted);
+
+  min-height: 50px;
+
+  line-height: 1.6;
+
+  margin-bottom: 25px;
+}
+
+.question-count {
+  color: var(--white);
+
+  font-family: "DM Mono", monospace;
+
+  font-size: 11px;
+
+  letter-spacing: 0.5px;
+}
+
+
+/* =========================================================
+   LOADING
+========================================================= */
+
+.loading-box {
+  border: 1px solid var(--line);
+
+  background: var(--dark);
+
+  padding: 45px;
+
+  color: var(--muted);
+
+  text-align: center;
+
+  font-family: "DM Mono", monospace;
+
+  font-size: 11px;
+
+  letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   PAGE HEADING
+========================================================= */
+
+.page-heading-row {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-end;
+
+  gap: 30px;
+}
+
+
+/* =========================================================
+   RESULTS
+========================================================= */
+
+.result-box {
+  background: var(--dark);
+
+  border: 1px solid var(--line);
+
+  border-left: 4px solid var(--orange);
+
+  padding: 55px;
+
+  text-align: center;
+}
+
+.result-topic {
+  color: var(--orange);
+
+  font-family: "DM Mono", monospace;
+
+  font-size: 12px;
+
+  letter-spacing: 2px;
+}
+
+.result-score {
+  color: var(--orange);
+
+  font-family: "Archivo Black", sans-serif;
+
+  font-size: clamp(90px, 15vw, 180px);
+
+  line-height: 0.9;
+}
+
+.result-correct {
+  font-family: "DM Mono", monospace;
+
+  font-size: 14px;
+
+  letter-spacing: 2px;
+}
+
+.result-message {
+  color: var(--muted);
+
+  margin: 20px auto 35px;
+}
+
+
+/* =========================================================
+   TEST
+========================================================= */
+
+.test-status {
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  border-bottom: 1px solid var(--line);
+
+  padding-bottom: 18px;
+
+  margin-bottom: 35px;
+
+  color: var(--muted);
+
+  font-family: "DM Mono", monospace;
+
+  font-size: 11px;
+}
+
+.test-question {
+  font-family: "Archivo Black", sans-serif;
+
+  font-size: clamp(30px, 4vw, 50px);
+
+  text-transform: uppercase;
+
+  line-height: 1;
+
+  margin-bottom: 35px;
+
+  overflow-wrap: break-word;
+}
+
+.answer-button {
+  width: 100%;
+
+  min-height: 50px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  text-align: left;
+
+  padding: 18px;
+
+  border: 1px solid var(--line);
+
+  background: var(--black);
+
+  color: var(--white);
+
+  font-family: "DM Mono", monospace;
+
+  font-size: 12px;
+
+  cursor: pointer;
+
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.answer-button:hover:not(:disabled) {
+  border-color: var(--orange);
+}
+
+.answer-button:disabled {
+  opacity: 0.55;
+
+  cursor: not-allowed;
+}
+
+.answer-button.selected {
+  background: var(--orange);
+
+  border-color: var(--orange);
+
+  color: var(--black);
+
+  font-weight: 700;
+}
+
+.validation-message {
+  color: var(--orange) !important;
+
+  font-family: "DM Mono", monospace;
+
+  font-size: 10px;
+
+  margin-top: 15px;
+}
+
+.test-hint {
+  color: var(--muted);
+
+  font-size: 11px !important;
+
+  margin-top: 12px;
+}
+
+
+/* =========================================================
+   FORMS
+========================================================= */
+
+.arena-label {
+  display: block;
+
+  color: var(--orange);
+
+  font-family: "DM Mono", monospace;
+
+  font-size: 10px;
+
+  letter-spacing: 1px;
+
+  margin-bottom: 8px;
+}
+
+.arena-input {
+  width: 100%;
+
+  min-height: 46px;
+
+  background: var(--black) !important;
+
+  color: var(--white) !important;
+
+  border: 1px solid var(--line) !important;
+
+  border-radius: 0 !important;
+
+  padding: 13px !important;
+
+  outline: none;
+}
+
+.arena-input:focus {
+  border-color: var(--orange) !important;
+
+  box-shadow: none !important;
+
+  outline: none;
+}
+
+.arena-input::placeholder {
+  color: #555 !important;
+}
+
+textarea.arena-input {
+  min-height: 120px;
+
+  resize: vertical;
+}
+
+select.arena-input {
+  cursor: pointer;
+}
+
+.form-select option {
+  background: var(--black);
+
+  color: var(--white);
+}
+
+
+/* =========================================================
+   NORMAL ERROR MESSAGE
+   Used for inline errors on other pages
+========================================================= */
+
+.error-message {
+  background: rgba(255, 59, 10, 0.08);
+
+  border: 1px solid var(--orange);
+
+  color: var(--orange);
+
+  padding: 15px;
+
+  font-family: "DM Mono", monospace;
+
+  font-size: 11px;
+
+  line-height: 1.5;
+
+  letter-spacing: 0.3px;
+}
+
+
+/* =========================================================
+   NORMAL SUCCESS MESSAGE
+   Used for inline messages on other pages
+========================================================= */
+
+.success-message {
+  background: rgba(34, 197, 94, 0.08);
+
+  border: 1px solid var(--green);
+
+  color: var(--green);
+
+  padding: 15px;
+
+  font-family: "DM Mono", monospace;
+
+  font-size: 11px;
+
+  line-height: 1.5;
+
+  letter-spacing: 0.5px;
+
+  animation: successFadeIn 0.2s ease;
+}
+
+@keyframes successFadeIn {
+  from {
+    opacity: 0;
+
+    transform: translateY(-4px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}
+
+
+/* =========================================================
+   BUILD FIXED NOTIFICATION
+   IMPORTANT:
+   This is separate from .success-message and
+   .error-message so it will not affect other pages.
+========================================================= */
+
+.build-notification {
+  position: fixed;
+
+  right: 24px;
+  bottom: 24px;
+
+  z-index: 999999;
+
+  width: min(440px, calc(100vw - 32px));
+
+  min-height: 60px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+
+  padding: 14px 16px;
+
+  background: #111111;
+
+  border: 1px solid var(--line);
+
+  box-shadow:
+    0 18px 50px rgba(0, 0, 0, 0.65);
+
+  font-family: "DM Mono", monospace;
+
+  font-size: 11px;
+
+  line-height: 1.5;
+
+  letter-spacing: 0.4px;
+
+  animation: buildNotificationIn 0.25s ease;
+
+  pointer-events: auto;
+
+  isolation: isolate;
+}
+
+
+/* =========================================================
+   SUCCESS BUILD NOTIFICATION
+========================================================= */
+
+.build-notification.success {
+  border-color: var(--green);
+
+  border-left: 4px solid var(--green);
+
+  color: var(--green);
+}
+
+
+/* =========================================================
+   ERROR BUILD NOTIFICATION
+========================================================= */
+
+.build-notification.error {
+  border-color: var(--red);
+
+  border-left: 4px solid var(--red);
+
+  color: var(--red);
+}
+
+
+/* =========================================================
+   NOTIFICATION ICON
+========================================================= */
+
+.build-notification-icon {
+  width: 28px;
+  height: 28px;
+
+  min-width: 28px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid currentColor;
+
+  color: inherit;
+
+  font-family: "DM Mono", monospace;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  line-height: 1;
+}
+
+
+/* =========================================================
+   NOTIFICATION TEXT
+========================================================= */
+
+.build-notification-text {
+  flex: 1;
+
+  min-width: 0;
+
+  color: inherit;
+
+  font-family: "DM Mono", monospace;
+
+  font-size: 11px;
+
+  line-height: 1.5;
+
+  text-transform: uppercase;
+
+  overflow-wrap: anywhere;
+}
+
+
+/* =========================================================
+   NOTIFICATION CLOSE
+========================================================= */
+
+.build-notification-close {
+  width: 28px;
+  height: 28px;
+
+  min-width: 28px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+  margin: 0;
+
+  background: transparent;
+
+  border: 1px solid var(--line);
+
+  border-radius: 0;
+
+  color: var(--muted);
+
+  font-family: Arial, sans-serif;
+
+  font-size: 20px;
+
+  font-weight: 400;
+
+  line-height: 1;
+
+  cursor: pointer;
+
+  appearance: none;
+  -webkit-appearance: none;
+
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.build-notification-close:hover {
+  color: var(--white);
+
+  border-color: var(--white);
+
+  background: var(--black);
+}
+
+.build-notification-close:focus {
+  outline: none;
+
+  border-color: var(--orange);
+
+  color: var(--orange);
+}
+
+
+/* =========================================================
+   NOTIFICATION ANIMATION
+========================================================= */
+
+@keyframes buildNotificationIn {
+  from {
+    opacity: 0;
+
+    transform:
+      translateY(20px)
+      translateX(10px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      translateY(0)
+      translateX(0);
+  }
+}
+
+
+/* =========================================================
+   HISTORY
+========================================================= */
+
+.history-card {
+  border: 1px solid var(--line);
+
+  background: var(--dark);
+
+  margin-bottom: 12px;
+}
+
+.history-header {
+  padding: 25px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 20px;
+
+  cursor: pointer;
+
+  transition: background 0.2s ease;
+}
+
+.history-header:hover {
+  background: #191919;
+}
+
+.history-header h3 {
+  font-family: "Archivo Black", sans-serif;
+
+  margin: 7px 0 0;
+
+  text-transform: uppercase;
+
+  overflow-wrap: break-word;
+}
+
+.history-score {
+  color: var(--orange);
+
+  font-family: "Archivo Black", sans-serif;
+
+  font-size: 40px;
+
+  flex-shrink: 0;
+}
+
+.history-details {
+  border-top: 1px solid var(--line);
+
+  padding: 25px;
+}
+
+
+/* =========================================================
+   REVIEW
+========================================================= */
+
+.review-card {
+  padding: 25px;
+
+  border: 1px solid var(--line);
+
+  background: var(--black);
+
+  margin-top: 15px;
+}
+
+.review-card.correct {
+  border-left: 3px solid var(--green);
+}
+
+.review-card.wrong {
+  border-left: 3px solid var(--red);
+}
+
+.review-card h4 {
+  font-family: "Archivo Black", sans-serif;
+
+  margin: 10px 0 20px;
+
+  text-transform: uppercase;
+
+  overflow-wrap: break-word;
+}
+
+.review-card p {
+  color: var(--muted);
+
+  font-size: 13px;
+
+  line-height: 1.7;
+}
+
+.review-card strong {
+  color: var(--white);
+}
+
+.review-explanation {
+  border-top: 1px solid var(--line);
+
+  padding-top: 15px;
+
+  margin-top: 15px;
+}
+
+.answer-status {
+  display: inline-block;
+
+  font-family: "DM Mono", monospace;
+
+  color: var(--orange);
+
+  font-size: 10px;
+
+  letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   REVISION
+========================================================= */
+
+.revision-answer {
+  border-top: 1px solid var(--line);
+
+  margin-top: 30px;
+
+  padding-top: 30px;
+}
+
+.revision-answer h3 {
+  font-family: "Archivo Black", sans-serif;
+
+  font-size: 32px;
+
+  text-transform: uppercase;
+
+  margin: 12px 0;
+}
+
+.revision-answer p {
+  color: var(--muted);
+
+  line-height: 1.7;
+}
+
+.revision-correct {
+  color: var(--green) !important;
+
+  font-family: "DM Mono", monospace;
+
+  font-size: 11px;
+
+  letter-spacing: 1px;
+}
+
+.revision-wrong {
+  color: var(--red) !important;
+
+  font-family: "DM Mono", monospace;
+
+  font-size: 11px;
+
+  letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   BUILD / MANAGE
+========================================================= */
+
+.manage-section {
+  margin-top: 80px;
+}
+
+.section-header {
+  border-bottom: 1px solid var(--line);
+
+  padding-bottom: 20px;
+
+  margin-bottom: 25px;
+}
+
+.manage-card {
+  height: 100%;
+
+  background: var(--dark);
+
+  border: 1px solid var(--line);
+
+  padding: 25px;
+
+  overflow-wrap: break-word;
+
+  transition:
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.manage-card:hover {
+  border-color: #353535;
+}
+
+.manage-card h3,
+.manage-card h4 {
+  font-family: "Archivo Black", sans-serif;
+
+  text-transform: uppercase;
+
+  margin: 12px 0;
+
+  overflow-wrap: break-word;
+}
+
+.manage-card h3 {
+  font-size: 26px;
+
+  line-height: 1.05;
+}
+
+.manage-card h4 {
+  font-size: 22px;
+
+  line-height: 1.15;
+}
+
+.manage-card p {
+  color: var(--muted);
+
+  font-size: 13px;
+
+  line-height: 1.6;
+}
+
+.small-action {
+  min-height: 34px;
+
+  padding: 8px 12px;
+
+  background: transparent;
+
+  color: var(--white);
+
+  border: 1px solid var(--line);
+
+  white-space: nowrap;
+}
+
+.small-action:hover {
+  border-color: var(--orange);
+
+  color: var(--orange);
+}
+
+.small-action.danger:hover {
+  border-color: var(--red);
+
+  color: var(--red);
+}
+
+.small-action:disabled {
+  opacity: 0.4;
+
+  cursor: not-allowed;
+}
+
+.delete-button {
+  margin-top: 25px;
+
+  padding: 12px 16px;
+
+  background: transparent;
+
+  border: 1px solid var(--red);
+
+  color: var(--red);
+}
+
+.delete-button:hover {
+  background: var(--red);
+
+  color: var(--black);
+}
+
+
+/* =========================================================
+   BUILD QUESTION OPTIONS
+========================================================= */
+
+.manage-card .question-count {
+  white-space: nowrap;
+}
+
+.manage-card strong {
+  color: var(--white);
+}
+
+
+/* =========================================================
+   TECHNOLOGY
+========================================================= */
+
+.tech-box {
+  border: 1px solid var(--line);
+
+  background: var(--dark);
+
+  padding: 25px 15px;
+
+  text-align: center;
+
+  font-family: "DM Mono", monospace;
+
+  font-size: 11px;
+
+  letter-spacing: 1px;
+
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.tech-box:hover {
+  border-color: var(--orange);
+
+  color: var(--orange);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+  .navbar-container {
+    padding: 0 25px;
+  }
+
+  .navbar-links {
+    gap: 24px;
+  }
+
+  .navbar-links .nav-link {
+    font-size: 10px;
+  }
+
+  .page-heading-row {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .hero-section {
+    padding-top: 20px;
+  }
+
+  .manage-section {
+    margin-top: 65px;
+  }
+
+  .info-box {
+    padding: 30px;
+  }
+
+  .manage-card {
+    padding: 22px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE NAVBAR
+========================================================= */
+
+@media (max-width: 767px) {
+
+  /* -----------------------------------------
+     NAVBAR
+  ----------------------------------------- */
+
+  .navbar-custom {
+    min-height: 70px;
+  }
+
+  .navbar-container {
+    min-height: 70px;
+
+    padding: 0 20px;
+  }
+
+  .navbar-logo {
+    font-size: 24px;
+
+    z-index: 10001;
+  }
+
+
+  /* -----------------------------------------
+     HAMBURGER
+  ----------------------------------------- */
+
+  .menu-toggle {
+    display: flex;
+
+    position: relative;
+
+    z-index: 10001;
+
+    flex-shrink: 0;
+  }
+
+
+  /* -----------------------------------------
+     MOBILE NAV
+  ----------------------------------------- */
+
+  .navbar-links {
+    position: absolute;
+
+    top: 70px;
+
+    left: 0;
+    right: 0;
+
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+    justify-content: flex-start;
+
+    gap: 0;
+
+    padding: 8px 20px 18px;
+
+    background: rgba(8, 8, 8, 0.99);
+
+    border-bottom: 1px solid var(--line);
+
+    box-shadow:
+      0 15px 30px rgba(0, 0, 0, 0.35);
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    pointer-events: none;
+
+    transform: translateY(-12px);
+
+    transition:
+      opacity 0.2s ease,
+      transform 0.2s ease,
+      visibility 0.2s ease;
+  }
+
+
+  /* -----------------------------------------
+     OPEN MOBILE NAV
+  ----------------------------------------- */
+
+  .navbar-links.menu-open {
+    opacity: 1;
+
+    visibility: visible;
+
+    pointer-events: auto;
+
+    transform: translateY(0);
+  }
+
+
+  /* -----------------------------------------
+     MOBILE LINKS
+  ----------------------------------------- */
+
+  .navbar-links .nav-link {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    min-height: 52px;
+
+    padding: 16px 5px !important;
+
+    margin: 0 !important;
+
+    border-bottom: 1px solid var(--line);
+
+    font-size: 11px;
+  }
+
+  .navbar-links .nav-link:last-child {
+    border-bottom: none;
+  }
+
+  .navbar-links .nav-link:hover {
+    color: var(--white) !important;
+  }
+
+  .navbar-links .nav-link.active {
+    color: var(--orange) !important;
+  }
+
+
+  /* -----------------------------------------
+     ACTIVE INDICATOR
+  ----------------------------------------- */
+
+  .navbar-links .nav-link.active::after {
+    left: auto;
+
+    right: 0;
+
+    top: 10px;
+
+    bottom: 10px;
+
+    width: 3px;
+
+    height: auto;
+  }
+
+
+  /* -----------------------------------------
+     PAGE
+  ----------------------------------------- */
+
+  .page-section {
+    min-height: calc(100vh - 70px);
+
+    padding: 60px 0 90px;
+  }
+
+  .page-title {
+    letter-spacing: -3px;
+  }
+
+  .hero-title {
+    letter-spacing: -4px;
+  }
+
+  .topic-card-title {
+    font-size: 38px;
+  }
+
+  .info-box,
+  .topic-card,
+  .result-box {
+    padding: 25px;
+  }
+
+  .history-header {
+    padding: 20px;
+  }
+
+  .history-score {
+    font-size: 30px;
+  }
+
+  .result-score {
+    font-size: 90px;
+  }
+
+  .test-status {
+    gap: 10px;
+  }
+
+  .manage-section {
+    margin-top: 55px;
+  }
+
+  .section-title {
+    letter-spacing: -3px;
+  }
+
+
+  /* -----------------------------------------
+     BUILD NOTIFICATION
+  ----------------------------------------- */
+
+  .build-notification {
+    left: 16px;
+    right: 16px;
+
+    bottom: 16px;
+
+    width: auto;
+
+    min-height: 56px;
+
+    padding: 13px 14px;
+
+    gap: 11px;
+
+    font-size: 10px;
+  }
+
+  .build-notification-icon {
+    width: 26px;
+    height: 26px;
+
+    min-width: 26px;
+  }
+
+  .build-notification-text {
+    font-size: 10px;
+
+    line-height: 1.45;
+  }
+
+  .build-notification-close {
+    width: 27px;
+    height: 27px;
+
+    min-width: 27px;
+
+    font-size: 19px;
+  }
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .navbar-container {
+    padding: 0 16px;
+  }
+
+  .navbar-logo {
+    font-size: 22px;
+  }
+
+  .menu-toggle {
+    width: 42px;
+
+    height: 42px;
+  }
+
+  .navbar-links {
+    top: 70px;
+
+    padding-left: 16px;
+
+    padding-right: 16px;
+  }
+
+  .page-section {
+    padding: 50px 0 70px;
+  }
+
+  .page-title {
+    font-size: clamp(52px, 17vw, 80px);
+
+    letter-spacing: -3px;
+  }
+
+  .hero-title {
+    font-size: clamp(60px, 18vw, 100px);
+
+    letter-spacing: -4px;
+  }
+
+  .section-title {
+    letter-spacing: -2px;
+  }
+
+  .topic-card {
+    padding: 22px;
+  }
+
+  .topic-card-title {
+    font-size: 32px;
+  }
+
+  .result-box {
+    padding: 25px 18px;
+  }
+
+  .result-score {
+    font-size: 75px;
+  }
+
+  .test-status {
+    font-size: 9px;
+
+    flex-wrap: wrap;
+  }
+
+  .test-question {
+    font-size: 28px;
+  }
+
+  .history-header {
+    align-items: flex-start;
+
+    padding: 18px;
+  }
+
+  .history-score {
+    font-size: 25px;
+  }
+
+  .main-button,
+  .secondary-button {
+    width: 100%;
+  }
+
+  .answer-button {
+    padding: 16px;
+
+    font-size: 11px;
+  }
+
+  .review-card {
+    padding: 18px;
+  }
+
+  .manage-card {
+    padding: 20px;
+  }
+
+  .manage-card h3 {
+    font-size: 23px;
+  }
+
+  .manage-card h4 {
+    font-size: 20px;
+  }
+
+  .small-action {
+    padding: 8px 10px;
+
+    font-size: 10px;
+  }
+
+  .arena-input {
+    font-size: 13px !important;
+  }
+
+
+  /* -----------------------------------------
+     BUILD NOTIFICATION
+  ----------------------------------------- */
+
+  .build-notification {
+    left: 12px;
+    right: 12px;
+
+    bottom: 12px;
+
+    width: auto;
+
+    padding: 12px;
+
+    gap: 10px;
+  }
+
+  .build-notification-icon {
+    width: 25px;
+    height: 25px;
+
+    min-width: 25px;
+
+    font-size: 11px;
+  }
+
+  .build-notification-text {
+    font-size: 9px;
+
+    line-height: 1.45;
+  }
+
+  .build-notification-close {
+    width: 26px;
+    height: 26px;
+
+    min-width: 26px;
+
+    font-size: 18px;
+  }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+========================================================= */
+
+@media (max-width: 350px) {
+
+  .navbar-container {
+    padding: 0 12px;
+  }
+
+  .navbar-logo {
+    font-size: 20px;
+  }
+
+  .menu-toggle {
+    width: 40px;
+
+    height: 40px;
+  }
+
+  .page-title {
+    font-size: 48px;
+  }
+
+  .hero-title {
+    font-size: 55px;
+  }
+
+  .topic-card-title {
+    font-size: 28px;
+  }
+
+  .navbar-links {
+    padding-left: 12px;
+
+    padding-right: 12px;
+  }
+
+  .info-box {
+    padding: 18px;
+  }
+
+  .manage-card {
+    padding: 18px;
+  }
+
+  .section-title {
+    font-size: 38px;
+  }
+
+
+  /* -----------------------------------------
+     VERY SMALL BUILD NOTIFICATION
+  ----------------------------------------- */
+
+  .build-notification {
+    left: 10px;
+    right: 10px;
+
+    bottom: 10px;
+
+    padding: 11px;
+
+    gap: 8px;
+  }
+
+  .build-notification-icon {
+    width: 24px;
+    height: 24px;
+
+    min-width: 24px;
+
+    font-size: 10px;
+  }
+
+  .build-notification-text {
+    font-size: 8px;
+
+    line-height: 1.4;
+  }
+
+  .build-notification-close {
+    width: 25px;
+    height: 25px;
+
+    min-width: 25px;
+
+    font-size: 17px;
+  }
+}
