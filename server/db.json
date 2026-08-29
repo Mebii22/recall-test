@@ -61,9 +61,9 @@
       "topicId": "1",
       "question": "Which method adds an item to the end of an array?",
       "options": [
-        "push()",
-        "pop()",
         "shift()",
+        "pop()",
+        "push()",
         "slice()"
       ],
       "answer": "push()",
@@ -91,8 +91,8 @@
       "topicId": "1",
       "question": "Which symbol is used for strict equality?",
       "options": [
-        "===",
         "=",
+        "===",
         "!=",
         "=="
       ],
@@ -136,8 +136,8 @@
       "topicId": "2",
       "question": "What is a React component?",
       "options": [
-        "A CSS file",
         "A reusable UI building block",
+        "A CSS file",
         "A server",
         "A database table"
       ],
@@ -166,10 +166,10 @@
       "topicId": "2",
       "question": "Which hook is commonly used for side effects?",
       "options": [
-        "useData",
+        "useEffect",
         "useClick",
         "useComponent",
-        "useEffect"
+        "useData"
       ],
       "answer": "useEffect",
       "explanation": "useEffect is used to perform side effects such as API requests.",
@@ -183,8 +183,8 @@
       "options": [
         "<link>",
         "<href>",
-        "<a>",
-        "<url>"
+        "<url>",
+        "<a>"
       ],
       "answer": "<a>",
       "explanation": "The anchor element <a> creates hyperlinks."
@@ -207,8 +207,8 @@
       "topicId": "3",
       "question": "Which HTML element creates a form?",
       "options": [
-        "<input>",
         "<form>",
+        "<input>",
         "<fieldset>",
         "<button>"
       ],
@@ -220,8 +220,8 @@
       "topicId": "3",
       "question": "Which element creates a numbered list?",
       "options": [
-        "<li>",
         "<ol>",
+        "<li>",
         "<ul>",
         "<list>"
       ],
@@ -234,8 +234,8 @@
       "question": "Which attribute provides alternative text for an image?",
       "options": [
         "href",
-        "src",
         "alt",
+        "src",
         "title"
       ],
       "answer": "alt",
@@ -246,10 +246,10 @@
       "topicId": "4",
       "question": "Which CSS property creates a flex container?",
       "options": [
-        "display: flex",
+        "layout: flex",
         "flex: display",
         "position: flex",
-        "layout: flex"
+        "display: flex"
       ],
       "answer": "display: flex",
       "explanation": "display: flex turns an element into a flex container."
@@ -272,9 +272,9 @@
       "topicId": "4",
       "question": "Which CSS property changes the background color?",
       "options": [
-        "background",
-        "bg-color",
         "background-color",
+        "bg-color",
+        "background",
         "color-background"
       ],
       "answer": "background-color",
@@ -287,10 +287,10 @@
       "topicId": "4",
       "question": "Which layout system is useful for two-dimensional layouts?",
       "options": [
-        "Grid",
+        "Inline",
         "Position",
         "Float",
-        "Inline"
+        "Grid"
       ],
       "answer": "Grid",
       "explanation": "CSS Grid is designed for two-dimensional row and column layouts."
@@ -300,8 +300,8 @@
       "topicId": "4",
       "question": "Which unit is relative to the root font size?",
       "options": [
-        "vh",
         "rem",
+        "vh",
         "em",
         "px"
       ],
@@ -314,9 +314,9 @@
       "question": "What is JavaScript?",
       "options": [
         "A database",
-        "A programming language",
+        "A browser",
         "An operating system",
-        "A browser"
+        "A programming language"
       ],
       "answer": "A programming language",
       "description": "JavaScript is widely used to add logic and interactivity to web applications.",
@@ -330,8 +330,8 @@
       "question": "Which keyword declares a block-scoped variable that can be reassigned?",
       "options": [
         "static",
-        "let",
         "const",
+        "let",
         "var"
       ],
       "answer": "let",
@@ -361,8 +361,8 @@
       "topicId": "1",
       "question": "Which operator checks both value and data type?",
       "options": [
-        "=",
         "===",
+        "=",
         "==",
         "!="
       ],
@@ -377,8 +377,8 @@
       "topicId": "1",
       "question": "Which method adds an element to the end of an array?",
       "options": [
-        "push()",
         "pop()",
+        "push()",
         "slice()",
         "shift()"
       ],
@@ -393,10 +393,10 @@
       "topicId": "1",
       "question": "Which method removes the last element from an array?",
       "options": [
-        "pop()",
+        "remove()",
         "shift()",
         "push()",
-        "remove()"
+        "pop()"
       ],
       "answer": "pop()",
       "description": "The pop method is used when the last array element needs to be removed.",
@@ -411,8 +411,8 @@
       "options": [
         "first()",
         "push()",
-        "pop()",
-        "shift()"
+        "shift()",
+        "pop()"
       ],
       "answer": "shift()",
       "description": "The shift method operates on the beginning of an array.",
@@ -425,10 +425,10 @@
       "topicId": "1",
       "question": "Which method converts a JSON string into a JavaScript object?",
       "options": [
-        "JSON.object()",
+        "JSON.parse()",
         "JSON.convert()",
         "JSON.stringify()",
-        "JSON.parse()"
+        "JSON.object()"
       ],
       "answer": "JSON.parse()",
       "description": "JSON.parse is commonly used when receiving JSON data from an API.",
@@ -441,8 +441,8 @@
       "topicId": "1",
       "question": "Which method converts a JavaScript object into a JSON string?",
       "options": [
-        "JSON.object()",
         "JSON.stringify()",
+        "JSON.object()",
         "JSON.convert()",
         "JSON.parse()"
       ],
@@ -506,9 +506,9 @@
       "question": "Which method creates a new array by transforming every element?",
       "options": [
         "filter()",
-        "map()",
+        "reduce()",
         "find()",
-        "reduce()"
+        "map()"
       ],
       "answer": "map()",
       "description": "map is useful for transforming data before displaying it.",
@@ -522,9 +522,9 @@
       "question": "Which method creates a new array containing elements that pass a test?",
       "options": [
         "forEach()",
-        "map()",
+        "filter()",
         "reduce()",
-        "filter()"
+        "map()"
       ],
       "answer": "filter()",
       "description": "Filtering is useful when only certain items from a collection are required.",
@@ -570,9 +570,9 @@
       "question": "Which operator is used for logical AND?",
       "options": [
         "||",
-        "!",
+        "&&",
         "&",
-        "&&"
+        "!"
       ],
       "answer": "&&",
       "description": "Logical operators are used to combine or modify conditions.",
@@ -601,9 +601,9 @@
       "topicId": "1",
       "question": "Which keyword returns a value from a function?",
       "options": [
-        "return",
-        "send",
         "output",
+        "send",
+        "return",
         "give"
       ],
       "answer": "return",
@@ -634,8 +634,8 @@
       "question": "What is React?",
       "options": [
         "A database",
-        "A programming language",
         "A JavaScript library",
+        "A programming language",
         "An operating system"
       ],
       "answer": "A JavaScript library",
@@ -650,8 +650,8 @@
       "question": "What is a React component?",
       "options": [
         "A server",
-        "A database",
         "A reusable UI building block",
+        "A database",
         "A CSS property"
       ],
       "answer": "A reusable UI building block",
@@ -665,9 +665,9 @@
       "topicId": "2",
       "question": "Which hook is used to manage state?",
       "options": [
-        "useState",
-        "useValue",
         "useComponent",
+        "useValue",
+        "useState",
         "useData"
       ],
       "answer": "useState",
@@ -715,8 +715,8 @@
       "options": [
         "ReactHTML",
         "HTMLX",
-        "XML only",
-        "JSX"
+        "JSX",
+        "XML only"
       ],
       "answer": "JSX",
       "description": "JSX makes React UI code easier to read and write.",
@@ -729,10 +729,10 @@
       "topicId": "2",
       "question": "Which attribute helps React identify list items?",
       "options": [
-        "key",
+        "idOnly",
         "indexOnly",
         "name",
-        "idOnly"
+        "key"
       ],
       "answer": "key",
       "description": "Keys help React efficiently update lists when data changes.",
@@ -747,8 +747,8 @@
       "options": [
         "buttonClick",
         "clickEvent",
-        "onPress",
-        "onClick"
+        "onClick",
+        "onPress"
       ],
       "answer": "onClick",
       "description": "React uses event handler props to respond to user interactions.",
@@ -762,9 +762,9 @@
       "question": "What is controlled form input in React?",
       "options": [
         "An input controlled by JSON Server",
-        "An input without a value",
+        "An input controlled by React state",
         "An input controlled only by CSS",
-        "An input controlled by React state"
+        "An input without a value"
       ],
       "answer": "An input controlled by React state",
       "description": "Controlled inputs make form values available through component state.",
@@ -778,8 +778,8 @@
       "question": "Which hook can store a mutable value without causing a re-render?",
       "options": [
         "useState",
-        "useRef",
         "useMemo",
+        "useRef",
         "useEffect"
       ],
       "answer": "useRef",
@@ -795,8 +795,8 @@
       "options": [
         "Image compression",
         "CSS styling",
-        "Database storage",
-        "Client-side navigation"
+        "Client-side navigation",
+        "Database storage"
       ],
       "answer": "Client-side navigation",
       "description": "React Router allows a React application to contain multiple routes or pages.",
@@ -841,9 +841,9 @@
       "topicId": "2",
       "question": "Which hook is useful for memoizing an expensive calculation?",
       "options": [
-        "useMemo",
-        "useCompute",
         "useCacheOnly",
+        "useCompute",
+        "useMemo",
         "useCalc"
       ],
       "answer": "useMemo",
@@ -857,10 +857,10 @@
       "topicId": "2",
       "question": "What is lifting state up?",
       "options": [
-        "Deleting component state",
+        "Moving shared state to a common parent",
         "Saving state to JSON",
         "Moving state to CSS",
-        "Moving shared state to a common parent"
+        "Deleting component state"
       ],
       "answer": "Moving shared state to a common parent",
       "description": "Lifting state helps sibling components share information.",
@@ -874,9 +874,9 @@
       "question": "What is the purpose of a React Fragment?",
       "options": [
         "Create a database",
-        "Fetch API data",
+        "Group elements without adding an extra DOM element",
         "Style a component",
-        "Group elements without adding an extra DOM element"
+        "Fetch API data"
       ],
       "answer": "Group elements without adding an extra DOM element",
       "description": "Fragments help return multiple elements without unnecessary wrapper elements.",
@@ -889,10 +889,10 @@
       "topicId": "2",
       "question": "Which file commonly contains the root React rendering code in a Vite project?",
       "options": [
-        "style.jsx",
+        "main.jsx",
         "server.jsx",
         "database.jsx",
-        "main.jsx"
+        "style.jsx"
       ],
       "answer": "main.jsx",
       "description": "Vite React projects commonly use main.jsx as the entry point.",
@@ -905,8 +905,8 @@
       "topicId": "2",
       "question": "What is conditional rendering?",
       "options": [
-        "Showing UI based on a condition",
         "Changing the database",
+        "Showing UI based on a condition",
         "Installing React",
         "Deleting all components"
       ],
@@ -922,9 +922,9 @@
       "question": "Which package can be used to make HTTP requests in a React project?",
       "options": [
         "ReactCSS",
-        "Axios",
+        "RouterCSS",
         "JSXHTTP",
-        "RouterCSS"
+        "Axios"
       ],
       "answer": "Axios",
       "description": "Axios is commonly used to communicate with REST APIs.",
@@ -954,9 +954,9 @@
       "question": "What does HTML stand for?",
       "options": [
         "Home Tool Markup Language",
-        "Hyper Transfer Markup Language",
+        "HyperText Markup Language",
         "HighText Machine Language",
-        "HyperText Markup Language"
+        "Hyper Transfer Markup Language"
       ],
       "answer": "HyperText Markup Language",
       "description": "HTML provides the structure and content of web pages.",
@@ -971,8 +971,8 @@
       "options": [
         "<head>",
         "<title>",
-        "<header>",
-        "<h1>"
+        "<h1>",
+        "<header>"
       ],
       "answer": "<h1>",
       "description": "Heading elements provide a hierarchy for page content.",
@@ -986,8 +986,8 @@
       "question": "Which element creates a hyperlink?",
       "options": [
         "<url>",
-        "<a>",
         "<href>",
+        "<a>",
         "<link>"
       ],
       "answer": "<a>",
@@ -1019,8 +1019,8 @@
       "options": [
         "<image>",
         "<src>",
-        "<picturebox>",
-        "<img>"
+        "<img>",
+        "<picturebox>"
       ],
       "answer": "<img>",
       "description": "Images are embedded in HTML using the img element.",
@@ -1033,8 +1033,8 @@
       "topicId": "3",
       "question": "Which attribute provides alternative text for an image?",
       "options": [
-        "src",
         "alt",
+        "src",
         "href",
         "text"
       ],
@@ -1050,9 +1050,9 @@
       "question": "Which element creates an unordered list?",
       "options": [
         "<ol>",
-        "<ul>",
+        "<list>",
         "<li>",
-        "<list>"
+        "<ul>"
       ],
       "answer": "<ul>",
       "description": "Unordered lists are normally displayed with bullet points.",
@@ -1065,10 +1065,10 @@
       "topicId": "3",
       "question": "Which element creates an ordered list?",
       "options": [
-        "<ol>",
+        "<order>",
         "<ul>",
         "<li>",
-        "<order>"
+        "<ol>"
       ],
       "answer": "<ol>",
       "description": "Ordered lists are useful when the order of items matters.",
@@ -1113,8 +1113,8 @@
       "topicId": "3",
       "question": "Which input type is used for an email address?",
       "options": [
-        "type=\"address\"",
         "type=\"email\"",
+        "type=\"address\"",
         "type=\"mail\"",
         "type=\"text-email\""
       ],
@@ -1146,9 +1146,9 @@
       "question": "Which semantic element represents navigation links?",
       "options": [
         "<menu-links>",
-        "<links>",
+        "<nav>",
         "<navigate>",
-        "<nav>"
+        "<links>"
       ],
       "answer": "<nav>",
       "description": "Semantic elements make the structure of a page clearer.",
@@ -1162,9 +1162,9 @@
       "question": "Which element represents the main content of a document?",
       "options": [
         "<content>",
-        "<main>",
+        "<section-main>",
         "<body-main>",
-        "<section-main>"
+        "<main>"
       ],
       "answer": "<main>",
       "description": "The main element identifies the primary content of the document.",
@@ -1177,10 +1177,10 @@
       "topicId": "3",
       "question": "Which element defines a paragraph?",
       "options": [
-        "<p>",
+        "<paragraph>",
         "<text>",
         "<para>",
-        "<paragraph>"
+        "<p>"
       ],
       "answer": "<p>",
       "description": "Paragraphs are used to organize blocks of written content.",
@@ -1193,10 +1193,10 @@
       "topicId": "3",
       "question": "Which element contains metadata about an HTML document?",
       "options": [
-        "<info>",
+        "<head>",
         "<header>",
         "<meta-data>",
-        "<head>"
+        "<info>"
       ],
       "answer": "<head>",
       "description": "The head contains information used by the browser and other tools.",
@@ -1227,8 +1227,8 @@
       "options": [
         "needed",
         "validate",
-        "required",
-        "must"
+        "must",
+        "required"
       ],
       "answer": "required",
       "description": "Required fields help ensure important information is provided.",
@@ -1241,10 +1241,10 @@
       "topicId": "3",
       "question": "Which element is commonly used for a table row?",
       "options": [
-        "<table-row>",
+        "<tr>",
         "<row>",
         "<td>",
-        "<tr>"
+        "<table-row>"
       ],
       "answer": "<tr>",
       "description": "HTML tables are organized into rows and cells.",
@@ -1258,9 +1258,9 @@
       "question": "Which element defines a table data cell?",
       "options": [
         "<tr>",
-        "<cell>",
+        "<td>",
         "<data>",
-        "<td>"
+        "<cell>"
       ],
       "answer": "<td>",
       "description": "Table data cells contain individual pieces of table information.",
@@ -1274,9 +1274,9 @@
       "question": "What does CSS stand for?",
       "options": [
         "Colorful Style Sheets",
-        "Cascading Style Sheets",
+        "Creative Style Syntax",
         "Computer Style System",
-        "Creative Style Syntax"
+        "Cascading Style Sheets"
       ],
       "answer": "Cascading Style Sheets",
       "description": "CSS controls the appearance and layout of web pages.",
@@ -1289,10 +1289,10 @@
       "topicId": "4",
       "question": "Which property changes text color?",
       "options": [
-        "text-color",
+        "color",
         "foreground",
         "font-color",
-        "color"
+        "text-color"
       ],
       "answer": "color",
       "description": "The color property controls the foreground text color.",
@@ -1305,10 +1305,10 @@
       "topicId": "4",
       "question": "Which property changes the background color?",
       "options": [
-        "bg-color",
+        "background-color",
         "background-style",
         "color-background",
-        "background-color"
+        "bg-color"
       ],
       "answer": "background-color",
       "description": "Background colors help visually separate and organize sections.",
@@ -1321,10 +1321,10 @@
       "topicId": "4",
       "question": "Which declaration creates a flex container?",
       "options": [
-        "position: flex",
+        "display: flex",
         "layout: flex",
         "flex: display",
-        "display: flex"
+        "position: flex"
       ],
       "answer": "display: flex",
       "description": "Flexbox is useful for arranging items in rows or columns.",
@@ -1337,8 +1337,8 @@
       "topicId": "4",
       "question": "Which layout system is designed for rows and columns?",
       "options": [
-        "Float",
         "Grid",
+        "Float",
         "Inline",
         "Block"
       ],
@@ -1354,9 +1354,9 @@
       "question": "Which property controls the space inside an element?",
       "options": [
         "margin",
-        "inside",
+        "padding",
         "spacing",
-        "padding"
+        "inside"
       ],
       "answer": "padding",
       "description": "Padding creates space between content and an element's border.",
@@ -1369,8 +1369,8 @@
       "topicId": "4",
       "question": "Which property controls the space outside an element?",
       "options": [
-        "margin",
         "gap-only",
+        "margin",
         "outside",
         "padding"
       ],
@@ -1385,10 +1385,10 @@
       "topicId": "4",
       "question": "Which property changes the font size?",
       "options": [
-        "font-size",
+        "font-scale",
         "size",
         "text-size",
-        "font-scale"
+        "font-size"
       ],
       "answer": "font-size",
       "description": "Font size controls how large text appears.",
@@ -1417,8 +1417,8 @@
       "topicId": "4",
       "question": "Which property controls the width of an element?",
       "options": [
-        "width",
         "element-width",
+        "width",
         "length",
         "size-width"
       ],
@@ -1433,10 +1433,10 @@
       "topicId": "4",
       "question": "Which property controls the height of an element?",
       "options": [
-        "height",
+        "length",
         "vertical-size",
         "element-height",
-        "length"
+        "height"
       ],
       "answer": "height",
       "description": "Height controls the vertical size of an element.",
@@ -1450,8 +1450,8 @@
       "question": "Which CSS unit is relative to the root font size?",
       "options": [
         "vh",
-        "rem",
         "px",
+        "rem",
         "em"
       ],
       "answer": "rem",
@@ -1481,8 +1481,8 @@
       "topicId": "4",
       "question": "Which unit is relative to the viewport width?",
       "options": [
-        "vw",
         "vh",
+        "vw",
         "px",
         "em"
       ],
@@ -1497,9 +1497,9 @@
       "topicId": "4",
       "question": "Which property rounds the corners of an element?",
       "options": [
-        "round",
-        "radius-border",
         "border-radius",
+        "radius-border",
+        "round",
         "corner"
       ],
       "answer": "border-radius",
@@ -1515,8 +1515,8 @@
       "options": [
         "align-items",
         "flex-align",
-        "main-align",
-        "justify-content"
+        "justify-content",
+        "main-align"
       ],
       "answer": "justify-content",
       "description": "Flexbox provides properties for controlling item alignment.",
@@ -1530,9 +1530,9 @@
       "question": "Which property controls alignment on the cross axis in flexbox?",
       "options": [
         "cross-align",
-        "justify-content",
+        "align-items",
         "flex-items",
-        "align-items"
+        "justify-content"
       ],
       "answer": "align-items",
       "description": "align-items is commonly used to vertically align items in a row flex container.",
@@ -1547,8 +1547,8 @@
       "options": [
         "HTML queries",
         "Database queries",
-        "Style functions",
-        "Media queries"
+        "Media queries",
+        "Style functions"
       ],
       "answer": "Media queries",
       "description": "Responsive websites adapt their layout to different screen sizes.",
@@ -1561,10 +1561,10 @@
       "topicId": "4",
       "question": "Which property controls whether an element is displayed?",
       "options": [
-        "show",
+        "display",
         "visible-only",
         "render",
-        "display"
+        "show"
       ],
       "answer": "display",
       "description": "The display property controls an element's layout behavior and visibility.",
@@ -1578,9 +1578,9 @@
       "question": "Which property controls the stacking order of positioned elements?",
       "options": [
         "stack",
-        "layer",
+        "z-index",
         "order-index",
-        "z-index"
+        "layer"
       ],
       "answer": "z-index",
       "description": "z-index is useful when elements overlap.",
