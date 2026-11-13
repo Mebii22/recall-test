@@ -1,16 +1,92 @@
-# React + Vite
+RECALL — Active Recall Quiz Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+RECALL is a web application designed to help users test their knowledge using the Active Recall learning method. Users can create topics, answer questions, identify weak areas, and track their learning progress.
 
-Currently, two official plugins are available:
+🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* 📚 Create and manage custom topics
+* ❓ Add questions and multiple answer options
+* 🧠 Test knowledge using active recall quizzes
+* 🔄 Review and revise weak areas
+* 📊 Track quiz attempts and performance history
+* ➕ Build a personalized knowledge library
+* 📱 Responsive and modern user interface
 
-## React Compiler
+🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* React.js — Frontend development
+* JavaScript — Application logic
+* JSON Server — Mock REST API and data management
+* CSS — Styling and responsive design
+* Vite — Development and build tool
 
-## Expanding the Oxlint configuration
+💡 How It Works
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+1. Choose a topic from the topic library.
+2. Answer questions from memory.
+3. Check your answers and identify mistakes.
+4. Review weak areas through the revision section.
+5. Track your previous attempts and performance through the history page.
+
+🎯 Project Purpose
+
+The main goal of RECALL is to provide a simple and effective way for users to practice active recall, identify knowledge gaps, and improve through regular revision.
+
+🖥️ Application Sections
+
+Home
+
+Start an active recall session and begin testing your memory.
+
+Topics
+
+Browse available topics and choose a subject to practice.
+
+Revision
+
+Focus on questions from weak areas and improve your understanding.
+
+History
+
+Review previous quiz attempts and track your progress.
+
+Build
+
+Create custom topics and questions to build a personalized learning experience.
+
+📂 Project Structure
+
+recall-test/
+│
+├── public/
+├── server/
+├── src/
+├── package.json
+├── vite.config.js
+└── README.md
+
+⚙️ Installation
+
+Clone the repository:
+
+git clone https://github.com/Mebii22/recall-test.git
+
+Install dependencies:
+
+npm install
+
+Start the React application:
+
+npm run dev
+
+Start JSON Server separately based on your project configuration.
+
+👨‍💻 Author
+
+Antony Mebin K
+
+Aspiring Software Developer focused on building modern and user-friendly web applications.
+
+⸻
+
+⭐ If you find this project useful, feel free to star the repository!
